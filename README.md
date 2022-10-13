@@ -1,0 +1,2 @@
+# Library Management System
+This is a persistent Java application that allows a library to keep track of their books, costumers and transactions. The library will know what books are currently being lend out and which ones are available for a costumer to check out. As well as keep track of their inventory of books and their information, costumers and their information, and transactions. SQLite is used as the DMBS and each class has a Data Acces Object that will interface with the database.

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: DIMGRAY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenu">
+   <children>
+      <Label alignment="CENTER" layoutX="8.0" prefHeight="54.0" prefWidth="785.0" style="-fx-background-color: ORANGE;" text="Library Management System Main Menu" textAlignment="CENTER">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="newBook" contentDisplay="CENTER" layoutX="509.0" layoutY="91.0" mnemonicParsing="false" onAction="#addNewBook" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Add New Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewBooksButton" contentDisplay="CENTER" layoutX="509.0" layoutY="294.0" mnemonicParsing="false" onAction="#viewIssuedBooks" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="View Issued Books" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="newUser" contentDisplay="CENTER" layoutX="105.0" layoutY="94.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Add New User" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnButton" contentDisplay="CENTER" layoutX="509.0" layoutY="192.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Return Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="userDetail" contentDisplay="CENTER" layoutX="105.0" layoutY="294.0" mnemonicParsing="false" onAction="#showUserDetail" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="View User Detail" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="issueBookButton" contentDisplay="CENTER" layoutX="105.0" layoutY="192.0" mnemonicParsing="false" onAction="#showIssueBook" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Issue Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

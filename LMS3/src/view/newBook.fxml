@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="524.0" prefWidth="377.0" style="-fx-background-color: DIMGREY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewBook">
+   <children>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="57.0" prefWidth="416.0" style="-fx-background-color: ORANGE;" text="Add New Book Record">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="77.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookName" layoutX="160.0" layoutY="78.0" prefHeight="25.0" prefWidth="242.0" />
+      <TextField fx:id="author" layoutX="160.0" layoutY="234.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label layoutX="75.0" layoutY="150.0" prefHeight="27.0" prefWidth="74.0" text="Publisher" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="233.0" text="Author" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="isbn" layoutX="160.0" layoutY="275.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label layoutX="106.0" layoutY="274.0" text="ISBN" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="publishYear" layoutX="160.0" layoutY="358.0" prefHeight="25.0" prefWidth="85.0" />
+      <ComboBox fx:id="genre" layoutX="160.0" layoutY="316.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label layoutX="98.0" layoutY="315.0" text="Genre" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="357.0" text="Year" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerBook" alignment="CENTER" layoutX="160.0" layoutY="419.0" mnemonicParsing="false" onAction="#registerNewBook" prefHeight="50.0" prefWidth="117.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="publisherList" layoutX="160.0" layoutY="115.0" prefHeight="109.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>

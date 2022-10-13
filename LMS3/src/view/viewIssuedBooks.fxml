@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="414.0" style="-fx-background-color: DIMGRAY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewIssuedBooks">
+   <children>
+      <Label layoutX="101.0" layoutY="26.0" prefHeight="41.0" prefWidth="212.0" text="Issued Books Table" textFill="WHITE" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bookTable" layoutX="28.0" layoutY="80.0" prefHeight="289.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="bookID" editable="false" prefWidth="93.0" text="Book ID" />
+          <TableColumn fx:id="userID" editable="false" prefWidth="94.0" sortable="false" text="User ID" />
+            <TableColumn fx:id="issueDate" editable="false" prefWidth="175.0" sortable="false" text="Issue Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

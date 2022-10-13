@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="588.0" prefWidth="690.0" style="-fx-background-color: DIMGRAY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReturnBook">
+   <children>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="14.0" prefHeight="51.0" prefWidth="306.0" style="-fx-background-color: ORANGE;" text="Return Book">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="80.0" prefHeight="33.0" prefWidth="177.0" text="Quick Book Search" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookName" layoutX="242.0" layoutY="130.0" onKeyTyped="#searchBook" prefHeight="25.0" prefWidth="208.0" />
+      <Label alignment="CENTER" layoutX="258.0" layoutY="168.0" prefHeight="33.0" prefWidth="177.0" text="Click to select book" textFill="WHITE" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="bookView" layoutX="206.0" layoutY="213.0" onMouseClicked="#selectBook" prefHeight="128.0" prefWidth="281.0" />
+      <Label layoutX="257.0" layoutY="362.0" prefHeight="33.0" prefWidth="75.0" text="BookID" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookID" editable="false" layoutX="345.0" layoutY="362.0" prefHeight="33.0" prefWidth="91.0" />
+      <Button fx:id="returnButton" layoutX="259.0" layoutY="420.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="51.0" prefWidth="177.0" style="-fx-background-color: LIGHTSLATEGRAY;" text="Return Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="warningText" alignment="CENTER" layoutX="75.0" layoutY="492.0" prefHeight="60.0" prefWidth="546.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
